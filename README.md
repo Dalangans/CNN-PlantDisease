@@ -164,6 +164,8 @@ Launch Jupyter Lab or VS Code to run plant_disease_classification.ipynb:
 jupyter lab
 ```
 
+---
+
 ## 🚀 Future Work
 
 * **Focal Loss Integration:** Replace standard Categorical Cross-Entropy with Focal Loss to address hard negative samples (e.g., Early Blight).
