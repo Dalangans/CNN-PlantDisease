@@ -127,13 +127,16 @@ Out of **1,443 validation samples**, MobileNetV2 correctly predicted **1,331 sam
 └── requirements.txt                # Python Dependencies
 ```
 
-⚙️ Installation & Usage
-1. Clone the Repository
-Bash
-git clone [https://github.com/Dalangans/Deep-Learning-Plant-Disease-Identification.git](https://github.com/Dalangans/Deep-Learning-Plant-Disease-Identification.git)
+## ⚙️ Installation & Usage
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/Dalangans/Deep-Learning-Plant-Disease-Identification.git
 cd Deep-Learning-Plant-Disease-Identification
-2. Set Up Virtual Environment & Install Dependencies
-Bash
+```
+
+### 2. Set Up Virtual Environment & Install Dependencies
+```bash
 python -m venv venv
 # On Windows:
 venv\Scripts\activate
@@ -141,8 +144,10 @@ venv\Scripts\activate
 source venv/bin/activate
 
 pip install -r requirements.txt
-3. Dependencies (requirements.txt)
-Plaintext
+```
+
+### 3. Dependencies (requirements.txt)
+```Plaintext
 tensorflow>=2.11.0
 numpy
 pandas
@@ -150,33 +155,33 @@ matplotlib
 seaborn
 scikit-learn
 pillow
-4. Run the Notebook
+```
+
+### 4. Run the Notebook
 Launch Jupyter Lab or VS Code to run plant_disease_classification.ipynb:
 
-Bash
+```bash
 jupyter lab
-🚀 Future Work
-Focal Loss Integration: Replace standard Categorical Cross-Entropy with Focal Loss to address hard negative samples (e.g., Early Blight)[cite: 1].
+```
 
-Contrast & Shadow Preprocessing: Integrate CLAHE (Contrast Limited Adaptive Histogram Equalization) and shadow augmentation to minimize lighting interference[cite: 1].
+## 🚀 Future Work
 
-Model Explainability (Grad-CAM): Implement Grad-CAM visual attention maps to highlight regions of interest leading to model decisions[cite: 1].
+* **Focal Loss Integration:** Replace standard Categorical Cross-Entropy with Focal Loss to address hard negative samples (e.g., Early Blight).
+* **Contrast & Shadow Preprocessing:** Integrate CLAHE (Contrast Limited Adaptive Histogram Equalization) and shadow augmentation to minimize lighting interference.
+* **Model Explainability (Grad-CAM):** Implement Grad-CAM visual attention maps to highlight regions of interest leading to model decisions.
+* **Isolated Hold-out Test Set:** Establish a strict, isolated test dataset prior to image generators to ensure zero data leakage.
 
-Isolated Hold-out Test Set: Establish a strict, isolated test dataset prior to image generators to ensure zero data leakage[cite: 1].
+---
 
-👥 Authors & Acknowledgments
-Development Team (Group Project)
-Nabiel Harits Utomo (NPM: 2306267044)[cite: 1]
+## 👥 Authors & Acknowledgments
 
-Muhammad Pavel (NPM: 2306242363)[cite: 1]
+### Development Team (Group Project)
+* **Nabiel Harits Utomo** (NPM: 2306267044)
+* **Muhammad Pavel** (NPM: 2306242363)
+* **R. Aisha Syauqi Ramadhani** (NPM: 2306250554)
+* **Zhafira Zahra Alfarisy** (NPM: 2306250636)
 
-R. Aisha Syauqi Ramadhani (NPM: 2306250554)[cite: 1]
-
-Zhafira Zahra Alfarisy (NPM: 2306250636)[cite: 1]
-
-Course Details
-Course: Artificial Intelligence (Kecerdasan Buatan) — Final Project[cite: 1]
-
-Department: Computer Engineering, Universitas Indonesia[cite: 1]
-
-Advisor/Lecturer: Muhammad Firdaus Syawaludin Lubis, S.T., M.T., Ph.D.[cite: 1]
+### Course Details
+* **Course:** Artificial Intelligence (Kecerdasan Buatan) — Final Project
+* **Department:** Computer Engineering, Universitas Indonesia
+* **Advisor/Lecturer:** Muhammad Firdaus Syawaludin Lubis, S.T., M.T., Ph.D.
